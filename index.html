@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Fundamentals Palace</title>
+    <!-- external styling - css loads at the same time as html externally -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- My header section containing a title and paragraph -->
+    <header>
+        <!-- CHALLENGE id placed within h1 element where link within footer re-directs user -->
+        <h1 id="backtothetop" >The Web Fundamentals Palace</h1>
+        <p>
+            Hover over the family members below and take a peak into the lives of those living at Web Fundamentals Palace
+        </p>
+    </header>
+
+    <!-- My main content with each member of the family tree -->
+    <main class="center-items">
+        <div class="card">
+            <h2>King Kieran</h2>
+            <img src="./images/king.jpg" alt="King Kieran">
+            <p> My name is Kieran and I am the King. I like karate and kitesurfing. My son <a href="#peter">Peter</a> is the
+                heir to the throne.</p>
+        </div>
+        
+        <div class="card">
+            <!-- CHALLENGE Changed the Queen's quiche recipe to quesadilla recipe via tiktok witb external Anchor tag. Also, made the link open in a different window by adding (target="_blank") after link to recipe -->
+            <h3>Queen Queenie</h3>
+            <img src="./images/queen.jpg" alt="Queen Queenie">
+            <p>My name is Queenie and I am the Queen. I like quizzes and quesadillas. Click <a
+                    href="https://www.tiktok.com/@thecanok/video/7174885411716746539?q=quesadila%20recipe%20&t=1708961565123"target="_blank">here</a> to watch my favourite quesadilla
+                recipe</p>
+        </div>
+
+        <div class="card"> 
+            <h4 id="peter">Prince Peter</h4>
+            <img src="./images/prince-peter.jpg" alt="Prince Peter">
+            <p>My name is Peter the Prince. I like posing and pizza! Follow me on instagram <span>@pengprincepeter.</span>
+            </p>
+        </div>
+
+        <div class="card">
+            <h5>Princess Penelope</h5>
+            <img src="./images/princess-penelope.jpg" alt="Princess Penelope">
+            <p>My name is Princess Penelope. I like lots of things ...</p>
+            <ul id="penelope-list">
+                <li>Pencils</li>
+                <li>Peanut butter</li>
+                <li>Ponies</li>
+                <li>Pogo sticks</li>
+            </ul>
+        </div>  
+
+        <div class="card">
+            <h6>Susan</h6>
+            <img src="./images/susan.jpg" alt="Susan">
+            <p>I am King Kieran's Mistress and Mother to the illegitimate Princess Penelope.</p>
+        </div>
+    </main>
+
+    <!-- CHALLENGE link added to the footer with external Anchor tag to re-direct user to the top of the page when clicked -->
+    <footer> 
+        <p><a href="#backtothetop">Back to the top</a></p>
+    </footer>
+
+</body>
+
+</html>
